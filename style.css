@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    margin: 1em;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    transition-duration: 500ms;
+}
+
+#pinterest-icon{
+    width: 80px;
+    padding-top: 0px;
+}
+
+#navbar-pinterest{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+#navbar-pinterest li{
+    display: inline-block;
+     list-style-type: none;
+   padding: 10px 20px
+}
+
+#navbar-pinterest ol{
+    display: flex
+}
+#navbar-pinterest img{
+    width: 40px;
+}
+.container{
+    position: absolute;
+    left: 48%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding:  20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid aliceblue
+}
+
+::placeholder{
+    color: grey;
+}
+
+#lupa{
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.container input{
+    width: 350px;
+}
+
+.container i{
+    transform: rotate(-360deg);
+}
+
+#content{
+    padding-top: 53px;
+    columns: 5 320px;
+    column-gap: 0.5em;
+}
+@media (max-width: 600px){
+    #content{
+        padding-top: 57px;
+        columns: 3 200px;
+        column-gap: 0.3em;
+    }
+}
+
+#content img:hover{
+    cursor: pointer;
+    filter: saturate(130%);
+}
