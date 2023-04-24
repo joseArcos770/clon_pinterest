@@ -1,1 +1,1 @@
-# clon_pinterest
+proyecto clon de pinterest
